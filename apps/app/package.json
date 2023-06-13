@@ -8,7 +8,19 @@
     "react-native": "*",
     "expo": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "expo-router": "*",
+    "@nx/expo": "*",
+    "@expo/metro-config": "*",
+    "@react-navigation/native": "*",
+    "@storybook/react-native": "*",
+    "react": "*",
+    "@storybook/addon-ondevice-actions": "*",
+    "@storybook/addon-ondevice-backgrounds": "*",
+    "@storybook/addon-ondevice-controls": "*",
+    "@storybook/addon-ondevice-notes": "*",
+    "@react-native-async-storage/async-storage": "*",
+    "react-native-safe-area-context": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/app && cp yarn.lock apps/app",

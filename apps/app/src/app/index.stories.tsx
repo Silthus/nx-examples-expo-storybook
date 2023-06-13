@@ -1,5 +1,5 @@
 import type { Meta } from '@storybook/react-native';
-import { Home } from './index';
+import Home from './index';
 
 const Story: Meta<typeof Home> = {
   component: Home,

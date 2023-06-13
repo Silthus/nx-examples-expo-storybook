@@ -18,7 +18,7 @@ export const DEFAULT_REACTOTRON_WS_URI = 'ws://localhost:9090';
  * persists across reloads/restarts - this is handy when developing
  * new components in Storybook.
  */
-function ToggleStorybook(props) {
+function ToggleStorybook({ children }: React.PropsWithChildren): JSX.Element {
   const [showStorybook, setShowStorybook] = useState(false);
   const [StorybookUIRoot, setStorybookUIRoot] = useState(null);
   const ws = useRef(new WebSocket(DEFAULT_REACTOTRON_WS_URI));
@@ -61,14 +61,14 @@ function ToggleStorybook(props) {
   if (showStorybook) {
     return StorybookUIRoot ? <StorybookUIRoot /> : null;
   } else {
-    return props.children;
+    return children;
   }
 }
 
-export default () => {
+export default ({children}: React.PropsWithChildren) => {
   return (
     <ToggleStorybook>
-      <AppRoot />
+      {children}
     </ToggleStorybook>
   );
 };

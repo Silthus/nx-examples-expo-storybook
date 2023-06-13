@@ -98,7 +98,7 @@
     "@nx/web": "16.4.0-beta.3",
     "@nx/workspace": "16.4.0-beta.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
-    "@react-native-async-storage/async-storage": "1.18.1",
+    "@react-native-async-storage/async-storage": "1.17.11",
     "@schematics/angular": "16.0.0",
     "@storybook/addon-essentials": "^7.0.9",
     "@storybook/addon-ondevice-actions": "^6.5.3",
